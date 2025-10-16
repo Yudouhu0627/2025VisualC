@@ -1,0 +1,7 @@
+@charset "utf-8";
+body h1{
+	color: #C07F00;
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+	font-style: normal;
+	text-align: center;
+}
