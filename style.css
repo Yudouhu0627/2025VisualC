@@ -1,7 +1,156 @@
-@charset "utf-8";
-body h1{
-	color: #C07F00;
-	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
-	font-style: normal;
-	text-align: center;
+
+body {
+    background-color: #ffc0cb;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+}
+
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    color: #800000;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+.subtitle {
+    color: #800000;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.intro {
+    color: #333;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* 店舗画像 */
+.shop {
+    width: 100%;
+    position: relative;
+}
+
+.shop img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 22px;
+    color: #800000;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+
+.message {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.message p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.cakes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.cakes {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+}
+
+.cakes h2 {
+    color: #800000;
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.cakes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.cakes p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+footer {
+    background-color: #800000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 20px;
+    }
+    
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .cakes {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .cakes-container {
+        gap: 20px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .cakes {
+        flex: 1 1 45%;
+    }
+}
+
+@media (min-width: 901px) {
+    .cakes {
+        flex: 1 1 22%;
+    }
 }
